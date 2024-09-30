@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fusion Institute - Kickstart Your IT Career</title>
+    <style>
+        /* Embedded CSS for styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav ul li {
+            display: inline;
+            padding: 14px 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #4CAF50;
+        }
+
+        .course-item {
+            background-color: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        form label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        form input, form textarea, form button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+        }
+
+        form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Fusion Institute</h1>
+            <p>Kickstart Your IT Career with Our Professional Courses</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="home-section">
+        <div class="container">
+            <h2>Welcome to Fusion Institute</h2>
+            <p>At Fusion Institute, we offer a variety of IT courses that are designed to equip you with the skills needed to succeed in today's competitive IT industry. Whether you're a beginner or looking to enhance your skills, we have the right course for you.</p>
+        </div>
+    </section>
+
+    <section id="courses" class="courses-section">
+        <div class="container">
+            <h2>Our Courses</h2>
+            <div class="course-list">
+                <div class="course-item">
+                    <h3>AWS with DevOps</h3>
+                    <p>The AWS with DevOps course offers a thorough introduction to Amazon Web Services (AWS) and DevOps principles. Participants will learn key AWS services like EC2, S3, and Lambda, and integrate DevOps practices such as Continuous Integration and Deployment (CI/CD) and Infrastructure as Code (IaC). The course includes hands-on experience with tools like Docker, Jenkins, and Terraform, enabling students to build, deploy, and manage applications on AWS efficiently. By the end, participants will be able to enhance collaboration, speed up deployment, and streamline operations</p>
+                </div>
+                <div class="course-item">
+                    <h3>Data Science</h3>
+                    <p>Master data analysis, machine learning, and Python to become a data scientist.</p>
+                </div>
+                <div class="course-item">
+                    <h3>Mobile App Development</h3>
+                    <p>Develop apps for Android and iOS using React Native, Flutter, and other tools.</p>
+                </div>
+                <div class="course-item">
+                    <h3>Cybersecurity</h3>
+                    <p>Learn how to protect networks, systems, and data from cyber threats.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Fusion Institute is a leading IT training center focused on providing high-quality education to aspiring IT professionals. Our experienced instructors, practical curriculum, and state-of-the-art facilities make us the ideal choice for students looking to launch their IT careers.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions? Get in touch with us!</p>
+            <form action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Fusion Institute. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Embedded JavaScript for form validation
+        document.querySelector("form").addEventListener("submit", function(event) {
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let message = document.getElementById("message").value;
+
+            if (name === "" || email === "" || message === "") {
+                alert("All fields are required.");
+                event.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>
